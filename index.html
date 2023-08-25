@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>Text file reading</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+ 
+</head>
+<link rel="stylesheet" href="style.css">
+ 
+<body class="flexGrow flexCol center">
+    <div class="header">Compare files</div>
+    <div class="divWrapper flexGrow">
+        <div class="left center flexGrow flexCol">
+            <input id="leftInput" type="file">
+            <textarea id="leftText" cols="30" rows="20"
+                    placeholder="left files content ..."></textarea>
+        </div>
+        <div class="right center flexGrow flexCol">
+            <input id="rightInput" type="file">
+            <textarea id="rightText" cols="30" rows="20"
+                    placeholder="right files content ..."></textarea>
+        </div>
+    </div>
+    <div class="divWrapper flexGrow">
+        <div class="flexGrow flexCol">
+            <div class="header">exclusively left</div>
+            <textarea id="exclLeft" cols="20" rows="20"
+                placeholder="..."></textarea>
+        </div>
+        <div class="flexGrow flexCol">
+            <div class="header">in common</div>
+            <textarea id="union" cols="20" rows="20"
+                placeholder="..."></textarea>
+        </div>
+        <div class="flexGrow flexCol">
+            <div class="header">exclusively right</div>
+            <textarea id="exclRight" cols="20" rows="20"
+                placeholder="..."></textarea>
+        </div>
+    </div>
+    <script src="js/comp.js"></script>
+</body>
+ 
+</html>
